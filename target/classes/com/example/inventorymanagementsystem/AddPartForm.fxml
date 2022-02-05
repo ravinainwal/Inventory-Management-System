@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorymanagementsystem.AddPartFormController">
+   <children>
+      <Label layoutX="41.0" layoutY="50.0" prefHeight="27.0" prefWidth="98.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inHouseButton" layoutX="208.0" layoutY="55.0" onAction="#inHouseButtonAction" selected="true" text="In-House">
+         <font>
+            <Font size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="outsourcedButton" layoutX="332.0" layoutY="55.0" onAction="#outsourceButtonPress" text="Outsourced">
+         <font>
+            <Font size="16.0" />
+         </font></RadioButton>
+      <TextField fx:id="partIDTextField" disable="true" editable="false" layoutX="154.0" layoutY="147.0" prefHeight="27.0" prefWidth="162.0" promptText="Auto Gen-Disabled">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partNameTextField" layoutX="154.0" layoutY="198.0" promptText="Part Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partLnvField" layoutX="154.0" layoutY="251.0" promptText="LNV">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partPriceField" layoutX="154.0" layoutY="302.0" promptText="Price/Cost">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partMaxField" layoutX="154.0" layoutY="352.0" prefHeight="27.0" prefWidth="162.0" promptText="Max">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partMinField" layoutX="400.0" layoutY="352.0" prefHeight="27.0" prefWidth="136.0" promptText="Min">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="partMachineIDField" layoutX="154.0" layoutY="405.0" prefHeight="27.0" prefWidth="162.0" promptText="Machine Id">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="partCompanyNameField" layoutX="154.0" layoutY="405.0" promptText="Company Name" visible="false">
+      <font>
+         <Font size="13.0" />
+      </font></TextField>
+      <Label layoutX="106.0" layoutY="147.0" prefHeight="27.0" prefWidth="43.0" text="ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="200.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="254.0" text="Inv">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="355.0" text="Max">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="351.0" text="Min">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="partCompanyNameLabel" layoutX="41.0" layoutY="406.0" text="Company Name" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="204.0" layoutY="500.0" onAction="#saveButtonAction" prefHeight="27.0" prefWidth="63.0" text="Save" />
+      <Button layoutX="316.0" layoutY="500.0" onAction="#cancelButtonAction" prefHeight="27.0" prefWidth="63.0" text="Cancel" />
+      <Label layoutX="86.0" layoutY="304.0" text="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      
+      <Label fx:id="partMachineIDLabel" layoutX="41.0" layoutY="406.0" text="Machine ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="341.0" layoutY="152.0" prefHeight="17.0" prefWidth="197.0" text="Inv field should be an Integer" visible="false" />
+      <Label fx:id="nameLabel1" layoutX="341.0" layoutY="181.0" prefHeight="17.0" prefWidth="197.0" text="Price should be a double value" visible="false" />
+      <Label fx:id="nameLabel2" layoutX="341.0" layoutY="213.0" prefHeight="17.0" prefWidth="190.0" text="Max and min should be integers" visible="false" />
+      <Label fx:id="nameLabel3" layoutX="341.0" layoutY="243.0" prefHeight="17.0" prefWidth="174.0" text="Please enter a valid name" visible="false" />
+      
+   </children>
+</AnchorPane>
